@@ -43,7 +43,7 @@ export default Vue.extend({
   name: 'IndexPage',
   data(): IData {
     return {
-      title: 'Jason Mraz',
+      title: '',
     }
   },
   computed: {
@@ -57,8 +57,6 @@ export default Vue.extend({
   },
   methods: {
     search() {
-      // eslint-disable-next-line no-console
-      console.log('heheehh', this.title)
       this.$router.push({
         name: 'result',
         query: {
